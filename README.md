@@ -45,14 +45,19 @@ E2 + I ⇌ E2I
 Where:
 
 E1 = main enzyme of interest
+
 E2 = competing enzyme or protein
+
 I = free inhibitor
+
 E1I = enzyme 1 bound to inhibitor
+
 E2I = enzyme 2 bound to inhibitor
 
 The binding strength is described by dissociation constants:
 
 K1 = dissociation constant for E1 and the inhibitor
+
 K2 = dissociation constant for E2 and the inhibitor
 
 A lower dissociation constant means stronger binding.
@@ -80,6 +85,7 @@ Activity (%) = 100 * (1 - E1_bound / E1_total)
 ```
 For each concentration of E2, the program calculates how much inhibitor is free and how much inhibitor is bound to each enzyme.
 ```
+
 ## Input
 
 The program expects numerical input from the user.  
