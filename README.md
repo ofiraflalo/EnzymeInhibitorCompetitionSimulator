@@ -41,6 +41,7 @@ The binding reactions are:
 ```text
 E1 + I ⇌ E1I
 E2 + I ⇌ E2I
+```
 Where:
 
 E1 = main enzyme of interest
@@ -57,21 +58,26 @@ K2 = dissociation constant for E2 and the inhibitor
 A lower dissociation constant means stronger binding.
 The dissociation constants are:
 
+```text
 K1 = [E1][I] / [E1I]
 K2 = [E2][I] / [E2I]
-
+```
 For each value of total E2 concentration, the program solves the inhibitor mass-balance equation:
 
+```text
 I_total = I_free + E1_bound + E2_bound
-
+```
 where:
 
+```text
 E1_bound = E1_total * I_free / (K1 + I_free)
 E2_bound = E2_total * I_free / (K2 + I_free)
-
+```
 The activity of enzyme 1 is calculated as the fraction of E1 that is not bound to inhibitor:
 
+```text
 Activity (%) = 100 * (1 - E1_bound / E1_total)
+```
 For each concentration of E2, the program calculates how much inhibitor is free and how much inhibitor is bound to each enzyme.
 ```
 ## Input
